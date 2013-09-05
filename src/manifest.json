@@ -1,0 +1,16 @@
+{
+  "name": "Field Calculator",
+  "description": "Evaluate textbox content by pressing the right arrow key",
+  "version": "0.1",
+  "minimum_chrome_version": "16.0.884",
+  "permissions": [ "tabs", "http://*/*" ],
+  "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+  "content_scripts": [
+    {
+	  "matches": ["http://*/*", "https://*/*"], 
+      "js": [ "jquery.js", "parser.js", "ratio.js", "main.js" ],
+	  "css": [ "error_notification.min.css" ]
+    }
+  ],
+  "manifest_version": 2
+}
