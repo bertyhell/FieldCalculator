@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$(document).keyup(function (event) {
-		if (event.which == 40) {
+		if (event.which == 38) {
 			//TODO check if at the end of content
 			//evaluate input content
 
